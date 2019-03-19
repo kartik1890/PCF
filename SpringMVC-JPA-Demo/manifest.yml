@@ -1,0 +1,8 @@
+---
+applications:
+- name: SpringMVC-JPA-Demo-kkapp
+  memory: 1024M
+  host: SpringMVC-JPA-Demo-kkapp
+  domain: cfapps.io
+  services:
+  - clearDbkk
