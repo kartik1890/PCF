@@ -1,0 +1,22 @@
+
+Deployment through CLI
+
+cf --version
+
+To login in pcf
+cf login -a api.run.pivotal.io
+
+To deploy EAR/WAR
+cf push <app-name> -n <host-name> -i <no-ofinstance> -p <path of war>
+cf push spring-music -n spring-music-kk -i 1 -m 1024m -p C:\PCF\spring-music.war
+
+hostname should be unique all over
+
+So the application will be deployed at host
+spring-music-kk.cfapps.io
+
+DEA - droplet execution agent
+
+cf apps
+
+cf delete -f spring-music
