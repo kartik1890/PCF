@@ -19,4 +19,20 @@ DEA - droplet execution agent
 
 cf apps
 
+cf start <app-name>
 cf delete -f spring-music
+
+To view the logs
+cf logs <app-name>
+
+cf logs <app-name> --recent
+
+Create service
+cf create-service 
+cf marketplace
+cf create-service SERVICE PLAN SERVICE_INSTANCE [-b BROKER] [-c PARAMETERS_AS_JSON] [-t TAGS]
+
+cf env <app-name>
+
+cf cups <service name> -p {"hostname","port","username","password","dbname"}
+cf delete-service <service name>
